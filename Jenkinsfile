@@ -2,7 +2,7 @@ pipeline {
 agent any
 environment {
 dockerCreds = credentials('dockerhub_login')
-registry = "$abrodie22/vatcal"
+registry = ${dockerCreds_USR}/vatcal"
 registryCredentials = "dockerhub_login"
 dockerImage = "" // empty var, will be written to later
 }
