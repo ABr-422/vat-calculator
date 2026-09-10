@@ -7,8 +7,8 @@ import App from './App';
 //   expect(linkElement).toBeInTheDocument();
 // });
 
-test('renders VAT Calculator text', () => {
+test('renders Alex B text', () => {
   render(<App />);
-  const heading = screen.getByText(/VAT CALCULATOR/i);
+  const heading = screen.getByText(/Alex B/i);
   expect(heading).toBeInTheDocument();
 });
